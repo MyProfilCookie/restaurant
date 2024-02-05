@@ -1,0 +1,98 @@
+:root {
+    --color-black: black;
+    --color-dark-red: #950000;
+    --color-white: #fff;
+    --color-brown: #4c4343;
+    --color-beige: #ebe3db;
+    --color-light-beige: #f5f0ec;
+    --color-dark-beige: #d0c5be;
+    --color-light-red: #f5d9d9;
+    --color-varient-black: #444;
+    --color-silver: silver;
+    --color-color-figcaption: rgba(76, 67, 67, 0.9);
+    --color-background-linear: linear-gradient(to bottom,
+            rgba(208, 197, 186, 1) 0%,
+            rgba(235, 227, 219, 0.25) 25%,
+            rgba(255, 255, 255, 0) 100%);
+    --color-figure: rgba(76, 67, 67, 0.5);
+}
+
+.select,
+.filter {
+    text-align: center;
+}
+
+.filter {
+    margin-bottom: 2rem;
+}
+
+.choice-menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: var(--color-beige);
+    padding-top: 4rem;
+   
+}
+
+
+.choice-menu div,
+.choice-menu figure {
+    flex-basis: calc(50% - 2rem);
+    margin-bottom: 3rem;
+}
+
+.choice-menu figure,
+.galery img {
+    box-shadow: 3px 3px 8px var(--color-figure);
+    transition: transform .8s;
+}
+
+.choice-menu figure:hover,
+.galery img:hover {
+    transform: scale(1.07);
+}
+
+.choice-menu figcaption h3 {
+    font-size: 2rem;
+}
+
+.choice-menu figcaption h3::before,
+.choice-menu figcaption h3::after {
+    content: "";
+}
+
+.choice-menu figcaption img {
+    width: 5rem;
+    margin-bottom: .5rem;
+}
+
+.filter button {
+    border: none;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .3rem;
+    background-color: var(--color-background-linear);
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.filter button:hover,
+.filter button:focus,
+.mixitup-control-active {
+    color: var(--color-white) !important;
+    background-color: var(--color-dark-red) !important;
+}
+
+@media screen and (min-width: 760px) {
+    .choice-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 11px;
+        grid-row-gap: 0px;
+    }
+}

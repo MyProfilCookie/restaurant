@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Nous avons mis la langue en anglais car le site est en anglais -->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Choose your main course according to your menu at Freshly Restaurant!">
+	<title>Freshly Restaurant - Our menus</title>
+	<link rel="icon" href="/assets/ressources/images/logo.png">
+	<link rel="stylesheet" href="/assets/css/css-style-page/menus.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<!-- Notre classe container est ici pour contenir notre contenu -->
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="/assets/ressources/images/logo.png" alt="Logo Freshly Restaurant">
+				<strong>Freshly restaurant</strong>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="menus.html" class="active">Menus</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="button-down"></div>
+	<div class="button-darkmode"></div>
+	<!-- Main qui contient votre pluning mixitup -->
+	<main class="container mixitup">
+		<h1>Details of our menus</h1>
+		<p class="select">Choose your main course according to your menu!</p>
+		<div class="filter">
+			<!--  data-filter="all" permet de montrer tous les éléments -->
+			<!--  data-filter=".meat" permet de montrer les éléments avec la classe meat -->
+			<!--  data-filter=".vegan" permet de montrer les éléments avec la classe vegan -->
+			<!--  data-filter=".fish" permet de montrer les éléments avec la classe fish -->
+			<button data-filter="all">All</button>
+			<button data-filter=".meat">Meat</button>
+			<button data-filter=".vegan">Vegan</button>
+			<button data-filter=".fish">Fish</button>
+		</div>
+		<div class="choice-menu">
+			<!--  fish permet de d'appliquer le data-filter fish -->
+			<div class="mix fish">
+				<figure>
+					<img src="/assets/ressources/menus/fish-01.jpg" alt="A plate with cooked mussels">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Grilled mussels</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  vegan permet de d'appliquer le data-filter vegan -->
+			<div class="mix vegan">
+				<figure>
+					<img src="/assets/ressources/menus/vegan-03.jpg" alt="A plate with various vegan food">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Mixed vegetables</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  meat permet de d'appliquer le data-filter meat -->
+			<div class="mix meat">
+				<figure>
+					<img src="/assets/ressources/menus/meat-03.jpg" alt="A plate with two meat kebabs and rice">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Freshly kebabs</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!-- fish permet de d'appliquer le data-filter fish -->
+			<div class="mix fish">
+				<figure>
+					<img src="/assets/ressources/menus/fish-02.jpg" alt="A plate with shrimps and rice">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Cajun shrimp</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  meat permet de d'appliquer le data-filter meat -->
+			<div class="mix meat">
+				<figure>
+					<img src="/assets/ressources/menus/meat-01.jpg" alt="One big burger">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Freshly burger</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  vegan permet de d'appliquer le data-filter vegan -->
+			<div class="mix vegan">
+				<figure>
+					<img src="/assets/ressources/menus/vegan-02.jpg" alt="A plate with grilled eggplants">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Grilled eggplants</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  meat permet de d'appliquer le data-filter meat -->
+			<div class="mix meat">
+				<figure>
+					<img src="/assets/ressources/menus/meat-02.jpg"
+						alt="A plate with meat cooked in tomato sauce and mushrooms">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Beef stew with pasta</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  fish permet de d'appliquer le data-filter fish -->
+			<div class="mix fish">
+				<figure>
+					<img src="/assets/ressources/menus/fish-03.jpg" alt="A plate with grilled salmon and vegetables">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Grilled salmon</h3>
+					</figcaption>
+				</figure>
+			</div>
+			<!--  vegan permet de d'appliquer le data-filter vegan -->
+			<div class="mix vegan">
+				<figure>
+					<img src="/assets/ressources/menus/vegan-01.jpg" alt="Colorfull vegetarian plate">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Vegetable Jambalaya</h3>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+		<article>
+			<h2>Deserts</h2>
+			<p class="select">Here are the deserts you can choose to finish your meal (included in your menu).</p>
+			<div class="choice-menu">
+				<figure>
+					<img src="/assets/ressources/menus/desert-01.jpg" alt="A plate with a tiramisu">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Tiramisu</h3>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/assets/ressources/menus/desert-02.jpg"
+						alt="Two plates with pancakes and chocolate sauce">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Freshly Pancakes</h3>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/assets/ressources/menus/desert-03.jpg"
+						alt="A cup with red berries and soft white cheese">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Red berries cup</h3>
+					</figcaption>
+				</figure>
+			</div>
+		</article>
+		<article>
+			<h2>Cocktails</h2>
+			<p class="select">Soft drinkgs are included, but if you want you can order one of our excellent cocktails
+				(not included in the menu).</p>
+			<div class="choice-menu">
+				<figure>
+					<img src="/assets/ressources/menus/drink-01.jpg" alt="cocktail drink">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Winter Whiskey</h3>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/assets/ressources/menus/drink-02.jpg" alt="Two cocktail drinks">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Paloma cocktail</h3>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="/assets/ressources/menus/drink-03.jpg" alt="cocktail drink">
+					<figcaption><img src="/assets/ressources/images/fork-knife.svg" alt="">
+						<h3>Bellini cocktail</h3>
+					</figcaption>
+				</figure>
+			</div>
+		</article>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="flexbox">
+				<aside>
+					<h4>Opening hours</h4>
+					<ul>
+						<li>Monday: Closed</li>
+						<li>Tue-Wed : 9am - 10pm</li>
+						<li>Thu-Fri : 9am - 10pm</li>
+						<li>Sat-Sun : 5pm - 10pm</li>
+					</ul>
+				</aside>
+				<aside>
+					<h4>Contact</h4>
+					<address>
+						<p>13 Christopher Street</p>
+						<p>New York,</p>
+						<p>NY 10014-3543</p>
+						<a href="tel:+01 2000 800 9999">+01 2000 800 9999</a>
+					</address>
+				</aside>
+				<aside>
+					<h4>Social networks</h4>
+					<div class="aside-reseaux">
+						<a href="https://www.facebook.com/?locale=fr_FR" class="fab fa-facebook-f"></a>
+						<a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+						<a href="https://www.pinterest.fr/" class="fab fa-pinterest-p"></a>
+					</div>
+				</aside>
+			</div>
+			<article class="footer">
+				<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img
+							alt="Propriété de la 3W Academy" src="/assets/ressources/logo-3wa.png"></a></p><br>
+				<span>Cet exercice</span> de <a href="https://3wa.fr">3W Academy</a> est mis à disposition <a
+					rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des
+					étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification -
+					International</a>.<br>
+				Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a
+					href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été
+				réalisées par <a href="https://www.cath2nos.com">Catherine Denos</a>.
+			</article>
+		</div>
+		<div class="button-up"></div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="/assets/JS/mixitup.min.js"></script>
+	<script>
+		var mixer = mixitup(".mixitup");
+		$(document).ready(function () {
+			$("footer").on("click", "img", function (event) {
+				event.preventDefault();
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+			});
+			$('.button-up').click(function () {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+			});
+			$('.button-down').click(function () {
+				$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+				return false;
+			});
+			let click = 0;
+			$('.button-darkmode').click(function () {
+				if (click == 0) {
+					$("body").addClass("black");
+					$(".button-darkmode").addClass("white");
+					click = 1;
+				}
+				else {
+					$("body").removeClass("black");
+					$(".button-darkmode").removeClass("white");
+					click = 0;
+				}
+			});
+		});
+
+
+	</script>
+</body>
+
+</html>

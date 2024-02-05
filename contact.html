@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Nous avons mis la langue en anglais car le site est en anglais -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Page Contact Freshly Restaurant">
+	<title>Freshly Restaurant - Contact us</title>
+	<link rel="icon" href="/assets/ressources/images/logo.png">
+	<link rel="stylesheet" href="/assets/css/slick.css">
+	<link rel="stylesheet" href="/assets/css/slick-theme.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/assets/css/css-style-page/contact.css">
+</head>
+
+<body>
+	<header>
+		<!--  Notre class container nous permet de centrer notre contenu -->
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="/assets/ressources/images/logo.png" alt="Logo Freshly Restaurant">
+				<strong>Freshly restaurant</strong>
+			</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="menus.html">Menus</a></li>
+					<li><a href="contact.html" class="active">Contact</a></li>
+				</ul>
+			</nav>
+		</div> 
+	</header>
+	<div class="button-down"></div>
+	<div class="button-darkmode"></div>
+	<main class="container">
+		<h1>Contact us</h1>
+		<p class="select">If your want to make a reservation, please complete this form.</p>
+		<p class="fields">Fields with <abbr title="(required)" aria-hidden="true">*</abbr> are required.</p>
+		<form action="#" method="post">
+			<div>
+				<fieldset>
+					<legend>Reservation</legend>
+					<!-- abbr est une balise qui permet de mettre un titre="required" et aria-hidden="true", cela permet de mettre une étoile à côté du titre -->
+					<label for="date"><abbr title="(required)" aria-hidden="true">*</abbr> Date</label>
+					<input type="date" id="date" required>
+					<label for="time"><abbr title="(required)" aria-hidden="true">*</abbr> Time</label>
+					<input type="time" id="time" required>
+					<label for="guests"><abbr title="(required)" aria-hidden="true">*</abbr> Number of guests</label>
+					<input type="number" id="guests" required>
+				</fieldset>
+				<fieldset>
+					<legend>Details</legend>
+					<label for="name"><abbr title="(required)" aria-hidden="true">*</abbr> Name</label>
+					<input type="text" id="name" required>
+					<label for="email">Email</label>
+					<input type="email" id="email">
+					<label for="tel"><abbr title="(required)" aria-hidden="true">*</abbr> Telephone</label>
+					<input type="tel" id="tel" required>
+				</fieldset>
+			</div>
+			<label for="request" class="request">Further request</label>
+			<textarea id="request"></textarea>
+			<p><input type="submit" value="Reserve"></p>
+		</form>
+		<div class="map">
+			<h2>Our location</h2>
+			<iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-74.00132596492769%2C40.73365735272384%2C-73.99950206279756%2C40.73476096226166&amp;layer=mapnik"></iframe>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="flexbox">
+				<aside>
+					<h4>Opening hours</h4>
+					<ul>
+						<li>Monday: Closed</li>
+						<li>Tue-Wed : 9am - 10pm</li>
+						<li>Thu-Fri : 9am - 10pm</li>
+						<li>Sat-Sun : 5pm - 10pm</li>
+					</ul>
+				</aside>
+				<aside>
+					<h4>Contact</h4>
+					<address>
+                        <p>13 Christopher Street</p>
+                        <p>New York,</p>
+                        <p>NY 10014-3543</p>
+                        <a href="tel:+01 2000 800 9999">+01 2000 800 9999</a>
+                    </address>
+				</aside>
+				<aside>
+					<h4>Social networks</h4>
+					<div class="aside-reseaux">
+						<a href="https://www.facebook.com/?locale=fr_FR" class="fab fa-facebook-f"></a>
+						<a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+						<a href="https://www.pinterest.fr/" class="fab fa-pinterest-p"></a>
+					</div>
+				</aside>
+			</div> 
+			<article class="footer">
+				<p><a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/"><img alt="Propriété de la 3W Academy" src="/assets/ressources/logo-3wa.png"></a></p><br>
+				<span>Cet exercice</span> de <a href="https://3wa.fr">3W Academy</a> est mis à disposition <a rel="license" href="https://3wa.fr/propriete-materiel-pedagogique/">pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.<br>
+				Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr" rel="cc:morePermissions">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="https://www.cath2nos.com">Catherine Denos</a>.
+			</article> 
+		</div>
+		<div class="relative"></div>
+		<div class="button-up"></div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("footer").on("click", "img", function (event) {
+				event.preventDefault();
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+			});
+			$('.button-up').click(function () {
+				$("html, body").animate({ scrollTop: 0 }, "slow");
+				return false;
+			});
+			$('.button-down').click(function () {
+				$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+				return false;
+			});
+			let click = 0;
+            $('.button-darkmode').click(function () {
+                if (click == 0) {
+                    $("body").addClass("black");
+                    $(".button-darkmode").addClass("white");
+                    click = 1;
+                }
+                else {
+                    $("body").removeClass("black");
+                    $(".button-darkmode").removeClass("white");
+                    click = 0;
+                }
+            });
+		});
+	</script>
+</body>
+
+</html>

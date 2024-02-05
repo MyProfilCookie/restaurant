@@ -1,0 +1,41 @@
+:root {
+    --color-black: black;
+    --color-dark-red: #950000;
+    --color-white: #fff;
+    --color-brown: #4c4343;
+    --color-beige: #ebe3db;
+    --color-light-beige: #f5f0ec;
+    --color-dark-beige: #d0c5be;
+    --color-light-red: #f5d9d9;
+    --color-varient-black: #444;
+    --color-silver: silver;
+    --color-color-figcaption: rgba(76, 67, 67, 0.9);
+    --color-background-linear: linear-gradient(to bottom,
+            rgba(208, 197, 186, 1) 0%,
+            rgba(235, 227, 219, 0.25) 25%,
+            rgba(255, 255, 255, 0) 100%);
+    --color-figure: rgba(76, 67, 67, 0.5);
+}
+
+.galery {
+    background-color: var(--color-beige);
+    padding: 3rem 2rem 0 2rem;
+}
+
+.galery figure {
+    margin-bottom: 3rem;
+}
+
+.galery figure:last-of-type {
+    padding-bottom: 2rem;
+}
+
+.galery figcaption {
+    text-align: center;
+}
+
+video {
+    display: block;
+    width: 90%;
+    margin: 5rem auto;
+}
